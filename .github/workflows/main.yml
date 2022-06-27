@@ -14,5 +14,5 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Print version
-        run: echo $GITHUB_REF_NAME
+      - name: Update version
+        run: bash ${GITHUB_WORKSPACE}/scripts/update-version.sh
