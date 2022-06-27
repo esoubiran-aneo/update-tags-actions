@@ -16,3 +16,9 @@ jobs:
 
       - name: Update version
         run: bash ${GITHUB_WORKSPACE}/scripts/update-version.sh
+
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update version to ${GITHUB_REF_NAME}"
+          push: true
