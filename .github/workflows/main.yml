@@ -21,5 +21,5 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           new_branch: main
-          message: "Update version to ${{ GITHUB_REF_NAME }}"
+          message: "Update version to ${{ github.ref_name }}"
           push: true
